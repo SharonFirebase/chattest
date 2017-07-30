@@ -5,5 +5,8 @@ var textInput = document.querySelector('#text');
 var postButton = document.querySelector('#post');
 
 postButton.addEventListener('click', function(){
+  var msgUser = usernameInput.value;
+  var msgText = textInput.value;
+  
 });
 
