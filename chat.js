@@ -9,6 +9,6 @@ postButton.addEventListener('click', function(){
   var msgText = textInput.value;
   myFirebase.push({username:msgUser,text:msgText});
   textInput.value = "";
-  
+   
 });
  
