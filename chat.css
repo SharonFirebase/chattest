@@ -26,3 +26,9 @@ width:295px;
   border-radius:15px;
   border-style:none;
 }
+.msg {
+  margin:12px 0;
+  padding:10px;
+  width:410px;
+  background-color:#fce48a;
+}
