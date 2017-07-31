@@ -1,4 +1,8 @@
-# chattest contains files for candidate assessment as follows:
+# Assessment Test
+
+## Real Time Chat Application using Firebase. 
+
+## Instructions were provided as follows:
 
 ### To better assess your skills please complete the following within 1 week. 
 
