@@ -11,9 +11,9 @@
     <!-- reference https://firebase.google.com/docs/auth/ -->
     <!-- reference https://firebase.google.com/docs/web/setup -->
     <!-- reference Best practices for a great sign-in experience - Google I/O 2016 https://www.youtube.com/watch?v=0ucjYG_JrEE -->
-/////////
-  <!-- modified from source Firebase how to file https://github.com/firebase/quickstart-js/blob/master/auth/email.html  -->  
- 
+  
+    
+    <!-- modified from source Firebase how to file https://github.com/firebase/quickstart-js/blob/master/auth/email.html  -->  
       <article>
         <section>
        
@@ -22,32 +22,27 @@
         <div>
           <p>Enter an email and password below and either sign in to an existing account or sign up</p>
 
-          <input type="text" id="email" name="email" placeholder="Email"/>
-          &nbsp;&nbsp;&nbsp;
+          <input type="text" id="email" name="email" placeholder="Email"/><br />
           <input type="password" id="password" name="password" placeholder="Password"/>
           <br/><br/>
-          <button disabled  id="quickstart-sign-in" name="signin">Sign In</button>
-          &nbsp;&nbsp;&nbsp;
+          <button disabled  id="quickstart-sign-in" name="signin">Sign In</button><br/>
           <button id="quickstart-sign-up" name="signup">Sign Up</button>
-          &nbsp;&nbsp;&nbsp;
           <button disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
-          &nbsp;&nbsp;&nbsp;
           <button id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>   
-          </section>
-          </div><!-- authentication -->
- /////   
-    
-    <section>
-    
-    <div><!-- chat -->
-    <input id="username" type="text" placeholder="Name"><br/>
-    <input id="text" type="text" placeholder="Message"><br/>
-    <button id="post">Post</button><br/>
-    <div id="results"></div>
-    <script src="chat.js"></script>
-    </div>  
-          </section>
-          </article>
+        
+      </div><!-- end modified from Firebase quickstart -->
+    </section><!-- authentication -->
+        
+    <section><!-- chat -->
+      <div><!-- start chat -->
+        <input id="username" type="text" placeholder="Name"><br/>
+        <input id="text" type="text" placeholder="Message"><br/>
+        <button id="post">Post</button><br/>
+        <div id="results"></div>
+        <script src="chat.js"></script>
+      </div><!-- end chat -->  
+     </section><!-- chat -->
+    </article>
   </body>
   
 <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
