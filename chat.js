@@ -1,17 +1,17 @@
 var sharonFirebase = new Firebase('https://chattest-269df.firebaseio.com/');
 var usernameInput = document.querySelector('#username');
 var textInput = document.querySelector('#text');
-var loginUser = document.querySelector('#loginuser');
+var loginPassword = document.querySelector('#password');
 var loginEmail = document.querySelector('#loginemail');
 var postButton = document.querySelector('#post');
 var loginButton = document.querySelector('#login');
 
 //event listener for login button
 loginButton.addEventListener('click', function(){
-  var loginUser = loginuser.value;
+  var password = password.value;
   var loginEmail = loginemail.value;
-  sharonFirebase.push({loginuser:loginUser,loginemail:loginEmail});
-  loginUser.value = "";
+  sharonFirebase.push({password:loginPassword,loginemail:loginEmail});
+  loginPassword.value = "";
   loginEmail.value = "";
    
 });
