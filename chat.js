@@ -3,7 +3,7 @@ var usernameInput = document.querySelector('#username');
 var textInput = document.querySelector('#text');
 var postButton = document.querySelector('#post');
 
-
+//source of code below https://github.com/firebase/quickstart-js/blob/master/auth/email.html  -->
 //event listener for login button
     /**
      * Handles the sign in button press.
@@ -162,7 +162,7 @@ var postButton = document.querySelector('#post');
       initApp();
     };
 
-////
+//end adaption from source https://github.com/firebase/quickstart-js/blob/master/auth/email.html 
 
 //source https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword
 firebase.auth().signInWithEmailAndPassword(email, password)
