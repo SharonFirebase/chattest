@@ -11,4 +11,4 @@ postButton.addEventListener('click', function(){
   textInput.value = "";
   
 });
-
+ 
