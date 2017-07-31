@@ -13,7 +13,7 @@ postButton.addEventListener('click', function(){
 
 var beginListening = function() {
     myFirebase.on('child_added', function (snapshot) {
-   var msg=snapshot.val(); 
+      var msg=snapshot.val(); 
       var msgUsernameElement = document.createElement("b");
       msgUsernameElement.textContent = msg.username;
       var msgTextElement = document.createElement("p");
