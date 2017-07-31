@@ -7,7 +7,7 @@ var postButton = document.querySelector('#post');
 postButton.addEventListener('click', function(){
   var msgUser = usernameInput.value;
   var msgText = textInput.value;
-  myFirebase.set(msgUser + ' says: ' + msgText);
+  myFirebase.push(username:msgUser,text=msgText);
   textInput.value = "";
   
 });
