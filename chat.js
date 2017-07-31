@@ -2,14 +2,18 @@ var sharonFirebase = new Firebase('https://chattest-269df.firebaseio.com/');
 var usernameInput = document.querySelector('#username');
 var textInput = document.querySelector('#text');
 var postButton = document.querySelector('#post');
+var loginButton = document.querySelector('#login');
 
-postButton.addEventListener('click', function(){
-  var msgUser = usernameInput.value;
-  var msgText = textInput.value;
+
+loginButton.addEventListener('click', function(){
+  var loginUser = usernameInput.value;
+  var loginEmail = textInput.value;
   sharonFirebase.push({username:msgUser,text:msgText});
   textInput.value = "";
    
 });
+
+
 //source https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword
 firebase.auth().signInWithEmailAndPassword(email, password)
     .catch(function(error) {
@@ -24,6 +28,22 @@ firebase.auth().signInWithEmailAndPassword(email, password)
   console.log(error);
 });
 //end authentication with email and password 
+
+
+
+
+
+
+
+
+postButton.addEventListener('click', function(){
+  var msgUser = usernameInput.value;
+  var msgText = textInput.value;
+  sharonFirebase.push({username:msgUser,text:msgText});
+  textInput.value = "";
+   
+});
+
 
 //start listening once signed in
 var beginListening = function() {
