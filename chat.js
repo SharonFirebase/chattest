@@ -11,6 +11,13 @@ postButton.addEventListener('click', function(){
    
 });
 
+firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+
 var beginListening = function() {
       myFirebase.on('child_added',function(snapshot){
       var msg = snapshot.val(); 
