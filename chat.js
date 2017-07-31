@@ -8,6 +8,7 @@ var loginButton = document.querySelector('#login');
 
 //event listener for login button
 loginButton.addEventListener('click', function(){
+  alert('clicked');
   var password = password.value;
   var loginEmail = loginemail.value;
   sharonFirebase.push({password:loginPassword,loginemail:loginEmail});
