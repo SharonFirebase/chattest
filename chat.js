@@ -10,7 +10,7 @@ postButton.addEventListener('click', function(){
   textInput.value = "";
    
 });
-
+//source https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword
 firebase.auth().signInWithEmailAndPassword(email, password)
     .catch(function(error) {
   // Handle Errors here.
@@ -23,7 +23,9 @@ firebase.auth().signInWithEmailAndPassword(email, password)
   }
   console.log(error);
 });
+//end authentication with email and password 
 
+//start listening once signed in
 var beginListening = function() {
       sharonFirebase.on('child_added',function(snapshot){
       var msg = snapshot.val(); 
