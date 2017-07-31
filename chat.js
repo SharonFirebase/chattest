@@ -22,7 +22,7 @@ var beginListening = function() {
       msgElement.appendChild(msgUsernameElement);
       msgElement.appendChild(msgTextElement);
       msgElement.className = "msg";
-      document.getElementbyId("results").appendChild(msgElement);
+      document.getElementById("results").appendChild(msgElement);
     
     });
  
