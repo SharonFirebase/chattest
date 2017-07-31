@@ -11,25 +11,6 @@ postButton.addEventListener('click', function(){
    
 });
 
-var results = document.getElementById('results');
-var resultsRef = db.ref('/results');
-
-resultsRef.on('child_added', ({val, key}) => {
-  var li = document.createElement('li')
-  li.id = key;
-  li.innerHTML = resultsTemplate(val())
-  results.appendChild(li);
-})
-
-function resultsTemplate({fullName, message}) {
-  return `
-    <div class='fullName'>${fullName}</div>
-    <div class='message'>${message}</div>
-  `
-}
-
-
-
 var beginListening = function() {
       myFirebase.on('child_added', function (snapshot) {
       var msg = snapshot.val(); 
