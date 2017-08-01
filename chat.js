@@ -25,6 +25,6 @@ var beginListening = function() {
       document.getElementById("results").appendChild(msgElement);
     
     });
-  
+   
 }
 beginListening();
