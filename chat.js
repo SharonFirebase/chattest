@@ -37,19 +37,6 @@ firebase.auth().signInWithEmailAndPassword(email, password)
   }
   console.log(error);
 });
-// manage user https://firebase.google.com/docs/auth/web/manage-users
-
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-    alert('signed in');
-  } else {
-    // No user is signed in.
-    alert('not signed in');
-  }
-});
-
-
 
 //event listener for posting
 postButton.addEventListener('click', function(){
