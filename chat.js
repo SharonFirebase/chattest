@@ -47,14 +47,7 @@ postButton.addEventListener('click', function(){
    
 });
 
-//start adding if signed in 
 
-//https://firebase.google.com/docs/auth/web/password-auth
-var user = firebase.auth().currentUser;
-
-if (user) {
-  // User is signed in.
-  alert('yes');
 //start listening once signed in
 var beginListening = function() {
       sharonFirebase.on('child_added',function(snapshot){
@@ -73,9 +66,3 @@ var beginListening = function() {
   
 }
 beginListening();
-  
-  } else {
-  // No user is signed in.
-  alert('no');
-}
-//https://firebase.google.com/docs/auth/web/password-auth
