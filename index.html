@@ -36,7 +36,7 @@ limitations under the License.
   <script src="/__/firebase/init.js"></script>
   
  <script type="text/javascript">
-document.getElementById("chat-area").style.display = "none";
+
   
       
     /**
@@ -49,6 +49,7 @@ document.getElementById("chat-area").style.display = "none";
         document.getElementById('chat-area').style.visibility = 'hidden';
         // [END signout]
       } else {
+       document.getElementById('chat-area').style.visibility = 'hidden';
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
         if (email.length < 4) {
@@ -73,6 +74,7 @@ document.getElementById("chat-area").style.display = "none";
           }
           console.log(error);
           document.getElementById('quickstart-sign-in').disabled = false;
+         document.getElementById('chat-area').style.visibility = 'visible';
           // [END_EXCLUDE]
         });
         // [END authwithemail]
