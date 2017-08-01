@@ -36,9 +36,9 @@ limitations under the License.
   <script src="/__/firebase/init.js"></script>
   
  <script type="text/javascript">
-    function hideChat() {
-document.getElementById('chat-area').style.visibility = 'hidden';
-    }
+  var chatArea = document.getElementById('chat-area');
+  chatArea.style.visibility = 'hidden';
+    
     /**
      * Handles the sign in button press.
      */
@@ -46,6 +46,7 @@ document.getElementById('chat-area').style.visibility = 'hidden';
       if (firebase.auth().currentUser) {
         // [START signout]
         firebase.auth().signOut();
+        document.getElementById('chat-area').style.visibility = 'hidden';
         // [END signout]
       } else {
         var email = document.getElementById('email').value;
