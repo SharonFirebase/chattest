@@ -49,7 +49,7 @@ limitations under the License.
         document.getElementById('chat-area').style.visibility = 'hidden';
         // [END signout]
       } else {
-       document.getElementById('chat-area').style.visibility = 'hidden';
+        document.getElementById('chat-area').style.visibility = 'hidden';
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
         if (email.length < 4) {
@@ -74,7 +74,7 @@ limitations under the License.
           }
           console.log(error);
           document.getElementById('quickstart-sign-in').disabled = false;
-         document.getElementById('chat-area').style.visibility = 'visible';
+          document.getElementById('chat-area').style.visibility = 'visible';
           // [END_EXCLUDE]
         });
         // [END authwithemail]
@@ -161,10 +161,7 @@ limitations under the License.
       // Listening for auth state changes.
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
-       //start chat
-       alert('yes');
-        document.getElementById('chat-area').style.visibility = 'visible';
-        //end chat
+
         // [START_EXCLUDE silent]
         document.getElementById('quickstart-verify-email').disabled = true;
         // [END_EXCLUDE]
