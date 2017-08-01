@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Chat</title>
+    <link rel="stylesheet" type="text/css" href="chat.css">
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  </head>
+  <body>
+    <!-- reference https://firebase.google.com/docs/auth/ -->
+    <!-- reference https://firebase.google.com/docs/web/setup -->
+    <!-- reference Best practices for a great sign-in experience - Google I/O 2016 https://www.youtube.com/watch?v=0ucjYG_JrEE -->
+ 
+<article>       
+    <section><!-- chat -->
+      <div><!-- start chat -->
+        <input id="username" type="text" placeholder="Name"><br/>
+        <input id="text" type="text" placeholder="Message"><br/>
+        <button id="post">Post</button><br/>
+        <div id="results"></div>
+        <script src="chat.js"></script>
+      </div><!-- end chat -->  
+     </section><!-- chat -->
+    </article>
+  </body>
+  
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyArMGrhUlYh_NYlJNmsR6sTnB62ZVgU1qU",
+    authDomain: "chattest-269df.firebaseapp.com",
+    databaseURL: "https://chattest-269df.firebaseio.com",
+    projectId: "chattest-269df",
+    storageBucket: "chattest-269df.appspot.com",
+    messagingSenderId: "845289534625"
+  };
+  firebase.initializeApp(config);
+</script>
+  
+</html>
