@@ -9,10 +9,6 @@ var user = firebase.auth().currentUser;
 if (user) {
   // User is signed in.
 
-
-
-
-
 //event listener for posting
 postButton.addEventListener('click', function(){
   var msgUser = usernameInput.value;
@@ -20,7 +16,7 @@ postButton.addEventListener('click', function(){
   sharonFirebase.push({username:msgUser,text:msgText});
   textInput.value = "";
    
-});
+   });
 
 
 //start listening once signed in
@@ -42,4 +38,4 @@ var beginListening = function() {
 }
 beginListening();
   
-});
+});//end if user signed in
