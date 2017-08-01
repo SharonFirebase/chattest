@@ -155,6 +155,7 @@ limitations under the License.
       // Listening for auth state changes.
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
+        window.location = '/chat.html';
         // [START_EXCLUDE silent]
         document.getElementById('quickstart-verify-email').disabled = true;
         // [END_EXCLUDE]
