@@ -38,4 +38,9 @@ var beginListening = function() {
 }
 beginListening();
   
-});//end if user signed in
+  alert('yes');
+} else {
+  // No user is signed in.
+  alert('no');
+}
+//https://firebase.google.com/docs/auth/web/password-auth
