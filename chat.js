@@ -31,8 +31,4 @@ var beginListening = function() {
    
 }
 beginListening();
- 
-    } else {
-    // No user is signed in.
-      alert('no');
   }
