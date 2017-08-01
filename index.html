@@ -72,8 +72,7 @@ limitations under the License.
           // [END_EXCLUDE]
         });
         // [END authwithemail]
-      }
-      document.getElementById('chat-area').style.visibility = true;
+      }     
       document.getElementById('quickstart-sign-in').disabled = true;
     }
     
@@ -157,9 +156,8 @@ limitations under the License.
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
        //start chat
-        
-        
-        
+        document.getElementById('chat-area').style.visibility = true;
+      document.getElementById('test-chat-area').style.visibility = hidden;
         
         //end chat
         // [START_EXCLUDE silent]
