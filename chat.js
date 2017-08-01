@@ -3,6 +3,19 @@ var usernameInput = document.querySelector('#username');
 var textInput = document.querySelector('#text');
 var postButton = document.querySelector('#post');
 
+//https://firebase.google.com/docs/auth/web/password-auth
+var user = firebase.auth().currentUser;
+
+if (user) {
+  // User is signed in.
+  alert('yes');
+} else {
+  // No user is signed in.
+  alert('no');
+}
+//https://firebase.google.com/docs/auth/web/password-auth
+
+
 //source https://firebase.google.com/docs/auth/web/password-auth
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
