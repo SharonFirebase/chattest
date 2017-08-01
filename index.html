@@ -155,7 +155,12 @@ limitations under the License.
       // Listening for auth state changes.
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
-        window.location = '/chat.html';
+       //start chat
+        
+        
+        
+        
+        //end chat
         // [START_EXCLUDE silent]
         document.getElementById('quickstart-verify-email').disabled = true;
         // [END_EXCLUDE]
@@ -199,15 +204,6 @@ limitations under the License.
     window.onload = function() {
       initApp();
     };
-    
-//source https://stackoverflow.com/questions/38965060/how-do-i-redirect-the-user-after-a-successful-login-on-firebase   
-//Handle Account Status
-firebase.auth().onAuthStateChanged(user => {
-  if(user) {
-    window.location = '/chat.html';
-    alert('yes');
-  }
-});
     
   </script>
 </head>
