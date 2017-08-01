@@ -158,7 +158,7 @@ limitations under the License.
       firebase.auth().onAuthStateChanged(function(user) {
        //start chat
        alert('yes');
-        document.getElementById('chat-area').textContent = 'Chat Here';
+        document.getElementById(chat-area).style.visibility = 'visible';
         //end chat
         // [START_EXCLUDE silent]
         document.getElementById('quickstart-verify-email').disabled = true;
@@ -207,7 +207,7 @@ limitations under the License.
   </script>
 </head>
 <body>
-  <div id="chat-area" style="background-color:yellow;">Test</div>
+  <div id="chat-area" style="visibility:hidden;background-color:yellow;">Test</div>
 <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
   <!-- Header section containing title -->
