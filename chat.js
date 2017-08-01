@@ -16,27 +16,7 @@ if (user) {
 //https://firebase.google.com/docs/auth/web/password-auth
 
 
-//source https://firebase.google.com/docs/auth/web/password-auth
-firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // ...
-});
 
-//source https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword
-firebase.auth().signInWithEmailAndPassword(email, password)
-    .catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  if (errorCode === 'auth/wrong-password') {
-    alert('Wrong password.');
-  } else {
-    alert(errorMessage);
-  }
-  console.log(error);
-});
 
 //event listener for posting
 postButton.addEventListener('click', function(){
