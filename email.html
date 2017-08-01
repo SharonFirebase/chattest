@@ -199,8 +199,8 @@ limitations under the License.
       initApp();
     };
     
-    
-    //Handle Account Status
+//source https://stackoverflow.com/questions/38965060/how-do-i-redirect-the-user-after-a-successful-login-on-firebase   
+//Handle Account Status
 firebase.auth().onAuthStateChanged(user => {
   if(user) {
     window.location = 'home.html';
