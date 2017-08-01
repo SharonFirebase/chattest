@@ -24,7 +24,7 @@ firebase.auth().signInWithEmailAndPassword(email, password)
   }
   console.log(error);
 });
-//end authentication with email and password 
+// manage user https://firebase.google.com/docs/auth/web/manage-users
 
 //event listener for posting
 postButton.addEventListener('click', function(){
