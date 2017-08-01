@@ -75,16 +75,6 @@ limitations under the License.
       }
       document.getElementById('quickstart-sign-in').disabled = true;
     }
-//added start
-  
-//Handle Account Status
-firebase.auth().onAuthStateChanged(user => {
-  if(user) {
-    window.location = 'index.html';
-  }
-});  
-    
- //added end  
     
     /**
      * Handles the sign up button press.
