@@ -193,21 +193,18 @@
   </script>
 </head>
 <body>
- 
-    <header><!-- html5 used by some screen readers -->
-        <div class="centerme">
-             <h1>Login Using Email</h1>
-             <h2>Email and Password Authorization</h2>
-       </div>
-    </header>
+   <main><!-- screen readers use this -->
+     <article>
+      <header><!-- html5 used by some screen readers -->
+        <div class="centerme"><!-- div for header area not all UA expose HTML5 elements -->
+             <h1>Login With Email</h1>
+             <h2>Sign In, or Sign Up With Email</h2>
+        </div>
+      </header>
 
-  <main><!-- screen readers use this -->
     <div>
-
-      <!-- Container for the demo -->
       <div>
-        <div>
-          <p class="centerme">Enter an email and password below and either sign in to an existing account or sign up</p>
+        <section><!-- section for signup buttons -->
          <div class="centerme"><!-- wrapper for signup buttons -->
            <label for="email">Email</label>
           <input style="display:inline;width:auto;padding:5px;" type="text" id="email" name="email" placeholder="Email"/>
@@ -222,10 +219,9 @@
           <button disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
           &nbsp;&nbsp;&nbsp;
           <button id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
-          
-         </div><!-- closes wrapper -->
-          <div id="chat-area">
-               <article>       
+           </section>
+         </div><!-- closes wrapper for signup buttons-->
+         <div id="chat-area">   
                     <section><!-- chat -->
                       <div><!-- start chat -->
                         <input id="username" type="text" placeholder="Name"><br/>
@@ -236,9 +232,9 @@
                       </div><!-- end chat -->  
                      </section><!-- chat -->
                     </article>
-                 </div><!-- chat area -->
+           </div><!-- chat area -->
           
-          <!-- Container where we'll display the user details -->
+          <!-- Container from Firebase quickstart displays the user details useful for getting information -->
           <div class="quickstart-user-details-container" style="display:none;">
             Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
             <div>Firebase auth <code>currentUser</code> object value:</div>
