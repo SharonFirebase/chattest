@@ -34,11 +34,10 @@ width:295px;
 }
 #quickstart-sign-in, #quickstart-sign-up,#quickstart-verify-email,#quickstart-password-reset {
   
-
-  height:60px;
+  height:50px;
   background-color:green;
   color:#fff;
-  font-size:35px;
+  font-size:25px;
   border-radius:15px;
   border-style:none;
 
