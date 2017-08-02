@@ -1,26 +1,11 @@
 <!DOCTYPE html>
-<!--
-Copyright (c) 2016 Google Inc. 
- 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-    
-http://www.apache.org/licenses/LICENSE-2.0 
-  
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
 <html> 
 <head>
   <meta charset=utf-8 />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test File</title>
+   <title>Test File</title>
  
-  <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="main.css">
     <!-- for the chat -->
      <link rel="stylesheet" type="text/css" href="chat.css">
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
@@ -209,9 +194,10 @@ limitations under the License.
 </head>
 <body>
  
-    <header><!-- html5 used by some screen readers so keep this -->
+    <header><!-- html5 used by some screen readers -->
         <div class="centerme">
              <h2>Login Using Email</h2>
+             <h3>Email and Password Authorization</h3>
        </div>
     </header>
 
@@ -219,31 +205,25 @@ limitations under the License.
     <div>
 
       <!-- Container for the demo -->
-      <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
-          <!-- <h2 class="mdl-card__title-text">Firebase Email &amp; Password Authentication</h2>  -->
-            <div class="centerme"><h3>Email and Password Authorization</h3></div>
-            <!-- reorganize heading structure for screenreaders -->
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+      <div>
+        <div>
           <p class="centerme">Enter an email and password below and either sign in to an existing account or sign up</p>
          <div class="centerme"><!-- wrapper for signup buttons -->
-          <input class="mdl-textfield__input" style="display:inline;width:auto;padding:5px;" type="text" id="email" name="email" placeholder="Email"/>
+          <input style="display:inline;width:auto;padding:5px;" type="text" id="email" name="email" placeholder="Email"/>
           &nbsp;&nbsp;&nbsp;
-          <input class="mdl-textfield__input" style="display:inline;width:auto;padding:5px;" type="password" id="password" name="password" placeholder="Password"/>
+          <input style="display:inline;width:auto;padding:5px;" type="password" id="password" name="password" placeholder="Password"/>
           <br/><br/>
-          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+          <button disabled id="quickstart-sign-in" name="signin">Sign In</button>
           &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
+          <button id="quickstart-sign-up" name="signup">Sign Up</button>
           &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+          <button disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
           &nbsp;&nbsp;&nbsp;
-          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+          <button id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
           
          </div><!-- closes wrapper -->
           <div id="chat-area">
-            
-                <article>       
+               <article>       
                     <section><!-- chat -->
                       <div><!-- start chat -->
                         <input id="username" type="text" placeholder="Name"><br/>
