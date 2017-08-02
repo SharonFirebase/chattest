@@ -1,4 +1,4 @@
-var myFirebase = new Firebase('https://chattest-269df.firebaseio.com/');
+var sFirebase = new Firebase('https://chattest-269df.firebaseio.com/');
 var usernameInput = document.querySelector('#username');
 var textInput = document.querySelector('#text');
 var postButton = document.querySelector('#post');
@@ -6,13 +6,13 @@ var postButton = document.querySelector('#post');
 postButton.addEventListener('click', function(){
   var msgUser = usernameInput.value;
   var msgText = textInput.value;
-  myFirebase.push({username:msgUser,text:msgText});
+  sFirebase.push({username:msgUser,text:msgText});
   textInput.value = "";
    
 });
 
 var beginListening = function() {
-      myFirebase.on('child_added',function(snapshot){
+      sFirebase.on('child_added',function(snapshot){
       var msg = snapshot.val(); 
       var msgUsernameElement = document.createElement("b");
       msgUsernameElement.textContent = msg.username;
