@@ -33,7 +33,8 @@ width:295px;
   background-color:#fce48a;
 }
 .centerme {
-margin:auto;
+ margin:0 auto;
+ padding:0;
  text-align:center;
 }
 #quickstart-sign-in, #quickstart-sign-up,#quickstart-verify-email,#quickstart-password-reset {
