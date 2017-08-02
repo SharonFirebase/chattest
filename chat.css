@@ -20,7 +20,7 @@ width: 290px;
 #post {
 width:295px;
   height:60px;
-  background-color:green;
+  background-color:#006747;
   color:#fff;
   font-size:35px;
   border-radius:15px;
@@ -40,7 +40,7 @@ width:295px;
  
 #quickstart-sign-in, #quickstart-sign-up,#quickstart-verify-email,#quickstart-password-reset {
   height:50px;
-  background-color:green;
+  background-color:#006747;
   color:#fff;
   font-size:20px;
   padding:2px 30px;
