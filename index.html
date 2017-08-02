@@ -223,12 +223,14 @@
          </div><!-- closes wrapper for signup buttons-->
          <div id="chat-area">   
                     <section><!-- chat -->
-                      <div><!-- start chat -->
+                      <div><!-- sets off name so you don't have to keep repeating an entry if you dont want to-->
                         <label for="username">Name</label>
-                        <input id="username" type="text" placeholder="Name"><br/>
+                        <input id="username" type="text" placeholder="Name" class="centerme">
+                      </div><br/>
+                      <div><!-- sets off the message which must be entered for each post -->
                         <label for="text">Message</label>
-                        <input id="text" type="text" placeholder="Message"><br/>
-                        <button id="post">Post</button><br/>
+                        <input id="text" type="text" placeholder="Message" class="centerme"><br/>
+                        <button id="post" class="centerme">Post</button><br/>
                         <div id="results" class="centerme"></div>
                         <script src="chat.js"></script>
                       </div><!-- end chat -->  
