@@ -7,8 +7,7 @@ postButton.addEventListener('click', function(){
   var msgUser = usernameInput.value;
   var msgText = textInput.value;
   sFirebase.push({username:msgUser,text:msgText});
-  textInput.value = "";
-   
+  textInput.value = "";   
 });
 
 var beginListening = function() {
@@ -22,8 +21,7 @@ var beginListening = function() {
       msgElement.appendChild(msgUsernameElement);
       msgElement.appendChild(msgTextElement);
       msgElement.className = "msg";
-      document.getElementById("results").appendChild(msgElement);
-    
+      document.getElementById("results").appendChild(msgElement); 
     });
    
 }
