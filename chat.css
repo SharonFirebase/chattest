@@ -37,11 +37,13 @@ width:295px;
  padding:0;
  text-align:center;
 }
+
 #quickstart-sign-in, #quickstart-sign-up,#quickstart-verify-email,#quickstart-password-reset {
   height:50px;
   background-color:green;
   color:#fff;
   font-size:20px;
+  padding:20px;
   border-radius:15px;
   border-style:none;
 }
