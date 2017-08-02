@@ -21,7 +21,7 @@ var beginListening = function() {
       msgElement.appendChild(msgUsernameElement);
       msgElement.appendChild(msgTextElement);
       msgElement.className = "msg";
-      document.getElementById("results").style.textAlign="center"; 
+      document.getElementById("results").style.alignContent="center"; 
       document.getElementById("results").appendChild(msgElement); 
     });
    
