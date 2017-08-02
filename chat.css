@@ -19,11 +19,12 @@ width: 290px;
 #post {
 width:295px;
   height:60px;
-  background-color:#009374;
+  background-color:#000;
   color:#fff;
   font-size:35px;
   border-radius:15px;
   border-style:none;
+  margin-bottom:20px;
 }
 .msg {
   margin:12px 0;
