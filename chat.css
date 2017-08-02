@@ -1,6 +1,13 @@
 body {
 font-family: Helvetica, Georgia, Arial;
 }
+#topper {
+padding-top:25px;
+padding-bottom:25px;
+color:white;  
+background-color:#000;
+}
+
 #signin {
 padding-top:25px;
 padding-bottom:25px;  
@@ -33,7 +40,7 @@ width: 390px;
   height:95px;
   margin-top:20px;
   margin-bottom:20px;
-  border: solid 5px #DBE442;
+  border: solid 3px #000;
   border-radius:15px;
 }
 #post {
