@@ -73,7 +73,7 @@ width: 390px;
  padding:0;
  text-align:center;
 } 
-  
+ 
 #quickstart-sign-in, #quickstart-sign-up,#quickstart-verify-email,#quickstart-password-reset {
   height:50px;
   background-color:#009374;
@@ -83,6 +83,3 @@ width: 390px;
   border-radius:15px;
   border-style:none;
 }  
-#results {
-  width:90%;
-}   
