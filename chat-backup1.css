@@ -1,0 +1,85 @@
+body {
+font-family: Helvetica, Georgia, Arial;
+}
+#topper {
+padding-top:25px;
+padding-bottom:25px;
+color:white;  
+background-color:#000;
+}
+
+.em3 {
+font-size:3em;
+}
+
+.em2 {
+font-size:2em;
+}
+
+#signin {
+padding-top:25px;
+padding-bottom:25px;  
+background-color:#DBE442;
+}
+
+#email {
+width:390px;
+  height:45px;
+  border: solid 3px #000;
+  border-radius:15px;
+}
+#password {
+width:390px;
+  height:45px;
+  border: solid 3px #000;
+  border-radius:15px;
+}
+
+#username {
+width:390px;
+  height:45px;
+  margin-top:20px;
+  margin-bottom:20px;
+  border: solid 3px #000;
+  border-radius:15px;
+}
+#text {
+width: 390px;
+  height:95px;
+  margin-top:20px;
+  margin-bottom:20px;
+  border: solid 3px #000;
+  border-radius:15px;
+}
+#post {
+  width:390px;
+  height:60px;
+  background-color:#000;
+  color:#fff;
+  font-size:35px;
+  border-radius:15px;
+  border-style:none;
+  margin-bottom:20px;
+}
+.msg {
+  margin:12px 0;
+  padding:10px;
+  width:390px;
+  background-color:#DBE442;
+  border-radius:15px;
+}
+.centerme {
+ margin:0 auto;
+ padding:0;
+ text-align:center;
+} 
+ 
+#quickstart-sign-in, #quickstart-sign-up,#quickstart-verify-email,#quickstart-password-reset {
+  height:50px;
+  background-color:#009374;
+  color:#fff;
+  font-size:20px;
+  padding:2px 30px;
+  border-radius:15px;
+  border-style:none;
+}  
